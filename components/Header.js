@@ -1,4 +1,5 @@
 import Export from './Export';
+import WordCounter from './WordCounter';
 
 const Header = ({ showCheatsheet, setShowCheatsheet, setMarkdown, markdown }) => {
   return (
@@ -19,6 +20,7 @@ const Header = ({ showCheatsheet, setShowCheatsheet, setMarkdown, markdown }) =>
           >
             Clear
           </button>
+          <WordCounter markdown={markdown} />
         </div>
       </div>
     </div>
